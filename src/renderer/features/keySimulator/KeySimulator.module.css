@@ -1,0 +1,160 @@
+.keycontainer {
+  min-height: 90vh;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.keycontainer:focus {
+  outline: none;
+}
+
+.keyboard {
+  border-color: #000;
+  border-radius: 10px;
+  box-sizing: border-box;
+  box-shadow:   0 2px 8px 0 rgba(0,0,0,0.2),0 1px 5px 0 rgba(0,0,0,0.19);
+  background-clip: padding-box;
+  min-width: 56px;
+  min-height: 56px;
+  align-items: left;
+  display: flex;
+}
+
+.keyrow {
+  display: flex;
+  font-size: 12px;
+}
+
+.value {
+  font-size: 78px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-top: 2px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.button {
+  appearance: none;
+  background: none;
+  font-size: 32px;
+  padding-left: 12px;
+  padding-right: 12px;
+  outline: none;
+  border: 2px solid transparent;
+  color: rgb(112, 76, 182);
+  padding-bottom: 4px;
+  cursor: pointer;
+  background-color: rgba(112, 76, 182, 0.1);
+  border-radius: 2px;
+  transition: all 0.15s;
+}
+
+.textarea {
+  font-size: 16px;
+  padding: 2px;
+  width: 1440px;
+  height: 256px;
+  margin-right: 8px;
+  resize: none;
+}
+
+.button:hover, .button:focus {
+  border: 2px solid rgba(112, 76, 182, 0.4);
+}
+
+.button:active {
+  background-color: rgba(112, 76, 182, 0.2);
+}
+
+.selectcontainer {
+  margin-left: auto;
+  margin-right: auto;
+  /* box-shadow: rgba(0, 0, 0, 0.17) 1px 1px 4px; */
+  /* border-radius: 5px; */
+  border: 3px solid;
+  border-color: #eee;
+  background: #fff;
+  margin-bottom: 2vh;
+  width: 832px;
+}
+
+.selectarea {
+  display: flex;
+}
+
+.selectcol {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+}
+
+.dropdown {
+    display: block;
+    flex-grow: 1;
+    font-size: 16px;
+    font-family: roboto;
+    color: #444;
+    line-height: 1.3;
+    padding: .6em 1.4em .5em .8em;
+    box-sizing: border-box;
+    margin: 0;
+    border: 2px solid #9e9e9e;
+    transition: border 0.2s linear;
+    outline: none;
+    box-shadow: 0 1px 0 1px rgba(0,0,0,.04);
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #fff;
+    background-image: url('../../assets/images/expand.png');
+    background-repeat: no-repeat, repeat;
+    background-position: right .7em top 50%, 0 0;
+    background-size: 1em auto, 100%;
+}
+
+/* Hide arrow icon in IE browsers */
+.dropdown::-ms-expand {
+    display: none;
+}
+
+.dropdown:focus {
+    border: 2px solid #212121;
+}
+
+.dropdown option {
+    font-weight:normal;
+}
+
+/* Support for rtl text, explicit support for Arabic and Hebrew */
+*[dir="rtl"] .dropdown, :root:lang(ar) .dropdown, :root:lang(iw) .dropdown {
+    background-position: left .7em top 50%, 0 0;
+    padding: .6em .8em .5em 1.4em;
+}
+
+.mutecol {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 10%;
+}
+
+.mutebox {
+  align-items: center;
+  font-size: 16px;
+}
+
+.typingplaceholder {
+  display: inline-block;
+  text-align: left;
+  border: 3px solid;
+  border-color: #eee;
+  height: 11.72rem;
+  margin-bottom: 2vh;
+  width: 832px;
+}
